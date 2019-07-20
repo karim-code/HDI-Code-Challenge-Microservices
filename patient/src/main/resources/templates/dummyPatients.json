@@ -1,0 +1,38 @@
+[
+    {
+        "id": "0",
+        "insuranceNumber": "0135647889D12M",
+        "name": "Hans, Mueller",
+        "address": "Blumenstrasse 12, 42003 Duesseldorf",
+        "birthdate": "01.01.1969",
+        "gender": "M",
+        "illnesses": ["Grauer-Star","Rheuma"]
+    },
+    {
+        "id": "1",
+        "insuranceNumber": "045931D742687W",
+        "name": "Sabine, Gerst",
+        "address": "Bonnerstrasse 4, 532014 Koeln",
+        "birthdate": "21.02.1949",
+        "gender": "W",
+        "illnesses": ["Rheuma","Parkinson"]
+    },
+    {
+        "id": "2",
+        "insuranceNumber": "0987463D742687W",
+        "name": "Miriam, Schindler",
+        "address": "Baeckerstrasse 10, 802123 Muenchen",
+        "birthdate": "25.10.1940",
+        "gender": "W",
+        "illnesses": ["Sehschwaeche","Rheuma","Parkinson"]
+    },
+    {
+        "id": "3",
+        "insuranceNumber": "011074647889D42M",
+        "name": "Josef, Bremer",
+        "address": "Oldenburgerstrasse 45, 32125 Delmenhorst",
+        "birthdate": "06.04.1956",
+        "gender": "M",
+        "illnesses": ["Osteoporose","Rheuma","Bandscheibenvorfall"]
+    }
+]

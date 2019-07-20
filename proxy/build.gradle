@@ -1,0 +1,59 @@
+buildscript {
+	ext {
+		springBootVersion     = "2.1.6.RELEASE"
+	}
+	repositories {
+		mavenCentral()
+		jcenter()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath 'com.bmuschko:gradle-docker-plugin:3.0.3'
+	}
+}
+
+
+apply plugin: 'io.spring.dependency-management'
+apply plugin: "java"
+apply plugin: "application"
+apply plugin: "eclipse"
+apply plugin: "org.springframework.boot"
+//apply plugin: 'docker'
+apply plugin: 'com.bmuschko.docker-remote-api'
+import com.bmuschko.gradle.docker.tasks.image.DockerBuildImage
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    mainClassName       = "com.challenge.proxy.ProxyApplication"
+}
+
+
+
+repositories {
+	mavenCentral()
+	jcenter()
+}
+
+jar {
+    baseName = "proxy"
+    group    = "proxy"
+    version  = "0.0.1-SNAPSHOT"
+    manifest { attributes "Main-Class": "com.challenge.proxy.ProxyApplication" }
+}
+
+ext {
+	set('springCloudVersion', "Greenwich.SR2")
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-zuul'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}

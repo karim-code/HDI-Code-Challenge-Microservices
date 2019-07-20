@@ -1,0 +1,106 @@
+[
+	{
+		"id": "0",
+		"name": "Rheuma",
+		"description": "Eine Krankheit, die oft eine funktionelle Einschraenkung verursacht",
+		"symptoms": [
+			"Knie-Beschwerden",
+			"Ziehende Schmerzen",
+			"Schmerzen am Bewegungsapparat"
+		],
+		"therapies": [
+			"Schmerzreduktion",
+			"Zufuhr von Omega-3 Fettsaeuren",
+			"Zufuhr von Vitamin D",
+			"Bewegung und Entspannung"
+		]
+	},
+	{
+		"id": "1",
+		"name": "Grauer-Star",
+		"description": "Eine Krankheit, die oft eine Sehschwaeche verursacht",
+		"symptoms": [
+			"Truebung am Auge",
+			"Starke Kurzsichtigkeit",
+			"Blendempfindlichkeit"
+		],
+		"therapies": [
+			"Operative Entfernung",
+			"Korrektur des Sehfehlers",
+			"Verwendung von Linsen"
+		]
+	},
+	
+	{
+		"id": "2",
+		"name": "Parkinson",
+		"description": "Morbus Parkinson geht meistens mit Verlust der Kontrolle ueber die eigene Motorik einher",
+		"symptoms": [
+			"Zittern",
+			"Haltungsschwierigkeiten",
+			"Lustlosigkeit",
+			"Muskelsteifheit",
+			"Bewegungsarmut"
+		],
+		"therapies": [
+			"Levodopa Medikament",
+			"Dopamin-Agonisten Medikament",
+			"Physiotherapie",
+			"Logopaedie",
+			"Psychotherapeutische Massnahmen"
+		]
+	},
+	
+	{
+		"id": "3",
+		"name": "Sehschwaeche",
+		"description": "Eine meistens altersbedingte Krankheit, die Sehschwierigkeiten verursacht",
+		"symptoms": [
+			"Kurzsichtigkeit",
+			"Weitsichtigkeit",
+			"Fehlende Konzentration",
+			"Erkenungsprobleme"
+		],
+		"therapies": [
+			"Sehkorrektur mit Brille",
+			"Sehkorrektur mit Linse",
+			"Operative Korrektur"
+		]
+	},
+	
+	{
+		"id": "4",
+		"name": "Osteoporose",
+		"description": "Eine Krankheit, die mit poroesen Knochen einhergeht",
+		"symptoms": [
+			"Schmerzen",
+			"Knochenbrueche ohne Belastung",
+			"Verringerung der Koerpergroesse",
+			"Zahnausfall"
+		],
+		"therapies": [
+			"Zufuhr von Kalzium",
+			"Zufuhr von Vitamin D",
+			"Medikamentoese Abbremsung des Knochenabbaus"
+		]
+	},
+	
+	{
+		"id": "5",
+		"name": "Bandscheibenvorfall",
+		"description": "Ein Durchbruch des Gallertkerns einer Bandscheibe durch ihren Faserring",
+		"symptoms": [
+			"Schmerzen im unteren Ruecken",
+			"Verhaertete Muskeln",
+			"Strahlende Schmerzen in die Beinen",
+			"Laehmungserscheinungen",
+			"Kribbeln und Taubheitsgefuehl"
+		],
+		"therapies": [
+			"Physiotherapeutische Behandlung",
+			"Medikamentoese Behandlung",
+			"Bandscheiben-OP"
+		]
+	}
+]
+
