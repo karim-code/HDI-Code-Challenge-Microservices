@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  proxy:
+    image: karimthedev/proxy:latest
+    ports:
+      - "7070:7070"
+    links:
+      - patient
+    networks: 
+      - patient-illness
+  patient:
+    image: karimthedev/patient:latest
+    ports:
+      - "6060:6060"
+    links:
+      - mongo
+    networks: 
+      - patient-illness
+  illness:
+    image: karimthedev/illness:latest
+    ports:
+      - "9090:9090"
+    links:
+      - mongo
+    networks: 
+      - patient-illness
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017-27019:27017-27019"
+    networks: 
+      - patient-illness
+networks:
+  patient-illness:
+    driver: "bridge"

@@ -141,7 +141,7 @@ public class PatientController {
 					headers.set("Accept", MediaType.APPLICATION_JSON_VALUE);
 
 					UriComponentsBuilder builder = UriComponentsBuilder
-							.fromHttpUrl("http://localhost:9090/api/illnesses").queryParam("name", illnessName);
+							.fromHttpUrl("http://illness:9090/api/illnesses").queryParam("name", illnessName);
 
 					HttpEntity<?> entity = new HttpEntity<>(headers);
 
